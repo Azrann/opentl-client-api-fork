@@ -1,3 +1,5 @@
+**Languages:** [English](README.md) · [Español](README.es.md)
+
 # OpenTl.ClientApi
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nh3ek3735uqscqhx/branch/master?svg=true)](https://ci.appveyor.com/project/vik_borisov/opentl-clientapi/branch/master)
@@ -19,22 +21,22 @@ It's a perfect fit for any developer who would like to send data directly to Tel
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2018.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2018.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2018-06-14**, [`Telegram/OpenTl.ClientApi-master/tests/OpenTl.ClientApi.MtProto.UnitTests/Services/RequestSenderService.cs`](tests/OpenTl.ClientApi.MtProto.UnitTests/Services/RequestSenderService.cs); fecha de modificación conservada.
-- Primer registro del repositorio Git original que contiene este código: **2018-06-10**. Puede corresponder a una importación; no prueba cuándo se escribió por primera vez.
-- Dependencia fechada más reciente entre las comprobadas: [OpenTl.Schema 1.76.61](https://www.nuget.org/packages/OpenTl.Schema/1.76.61), publicada el **2018-04-19** (versión declarada), en [`Telegram/OpenTl.ClientApi-master/src/OpenTl.ClientApi.MtProto/OpenTl.ClientApi.MtProto.csproj`](src/OpenTl.ClientApi.MtProto/OpenTl.ClientApi.MtProto.csproj).
-- Referencia adicional: destino `netcoreapp2.0` en [`Telegram/OpenTl.ClientApi-master/samples/OpenTl.ClientApi.SampeApp/OpenTl.ClientApi.SampeApp.csproj`](samples/OpenTl.ClientApi.SampeApp/OpenTl.ClientApi.SampeApp.csproj); su [versión estable se publicó el 2017-08-14](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). Es una pista de generación tecnológica; pudieron existir versiones preliminares anteriores.
+- Most recent datable file: **2018-06-14**, [`Telegram/OpenTl.ClientApi-master/tests/OpenTl.ClientApi.MtProto.UnitTests/Services/RequestSenderService.cs`](tests/OpenTl.ClientApi.MtProto.UnitTests/Services/RequestSenderService.cs); preserved modification timestamp.
+- First record in the original Git repository containing this code: **2018-06-10**. This may be an import and does not establish when the code was first written.
+- Most recently published dependency among those checked: [OpenTl.Schema 1.76.61](https://www.nuget.org/packages/OpenTl.Schema/1.76.61), published on **2018-04-19** (declared version), in [`Telegram/OpenTl.ClientApi-master/src/OpenTl.ClientApi.MtProto/OpenTl.ClientApi.MtProto.csproj`](src/OpenTl.ClientApi.MtProto/OpenTl.ClientApi.MtProto.csproj).
+- Additional reference: target `netcoreapp2.0` in [`Telegram/OpenTl.ClientApi-master/samples/OpenTl.ClientApi.SampeApp/OpenTl.ClientApi.SampeApp.csproj`](samples/OpenTl.ClientApi.SampeApp/OpenTl.ClientApi.SampeApp.csproj); its [stable release was published on 2017-08-14](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). This indicates the technology generation; earlier preview releases may have existed.
 
-La publicación de una dependencia sitúa la configuración conservada a partir de esa versión, si la referencia es válida. Una actualización de paquetes puede ser mucho más reciente que el inicio del proyecto. No se restauraron paquetes para comprobarlo.
+A dependency's publication places the preserved configuration at or after that version, if the reference is valid. Package updates may be much newer than the project's beginnings. Packages were not restored to verify this.
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-La biblioteca separa API de cliente, transporte, sesión y servicios MTProto. Es interesante recorrer el límite entre una operación de aplicación y la infraestructura que prepara y envía una petición del protocolo.
+The library separates client API, transport, session, and MTProto services. Explore the boundary between an application operation and the infrastructure that prepares and sends a protocol request.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`src/OpenTl.ClientApi/ClientFactory.cs`](src/OpenTl.ClientApi/ClientFactory.cs)
 - [`src/OpenTl.ClientApi/ISessionStore.cs`](src/OpenTl.ClientApi/ISessionStore.cs)
